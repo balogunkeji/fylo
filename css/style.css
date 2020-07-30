@@ -286,6 +286,33 @@ img[alt = "stay"]{
   color: aqua;
 }
 
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10% 5%;
+}
+
+img[alt ="profile-1"]{
+  border-radius: 100%;
+  width: 10%;
+  object-fit: contain;
+  align-self: flex-start;
+
+}
+
+.card1,.card2,.card3{
+  padding: 35px;
+  background-color: black;
+  width: 90%;
+  height: 90%;
+}
+
+.card2-flex{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  font-size: 14px;
+}
 
 
 
