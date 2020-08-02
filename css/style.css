@@ -289,7 +289,7 @@ img[alt = "stay"]{
 .card{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 10% 5%;
+  margin: 7% 5% 23% 5%;
 }
 
 img[alt ="profile-1"]{
@@ -304,6 +304,7 @@ img[alt ="profile-1"]{
 .card1,.card2,.card3{
   padding: 25px;
   width: 90%;
+  margin-bottom: 10%;
   height: 100%;
   position: relative;
   z-index: 0;
@@ -342,12 +343,62 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin-top: -4px;
 }
 
+.form{
+  position: absolute;
+  z-index: 4;
+  padding: 50px;
+  width: 60%;
+  height: 11.5%;
+  margin: 30% 20% 30% 15%;
+  overflow: hidden;
+  background-color: var(--testimonial);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.form h2{
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.form p{
+  text-align: center;
+  margin: 20px;
+}
+
+input[type="email"]{
+  padding: 15px 20px;
+  width:60%;
+  border-radius: 25px;
+  border: none;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+input[type="email"]:focus,input[type="button"]:focus{
+ outline: none;
+}
+
+input[type="button"]{
+  padding: 15px 18px;
+  width: 30%;
+  color: white;
+  border-radius: 25px;
+  background-image: linear-gradient(to right top, #0e4ccc, #007fef, #00a8f2, #00cbe0, #12ebca);
+  margin-left: 18px;
+}
+
 footer{
   background-color: var(--footer);
   max-width: 100%;
   height: 600px;
+  position: relative;
 }
 
+.footer{
+  padding: 5%;
+}
 
 
 
