@@ -170,7 +170,7 @@ nav ul li a{
     background-image: linear-gradient(to right top, #ff69b4, #ff707e, #ff953f, #f5c200, #a8eb12);
   }
 
-  main,footer{
+  main{
     margin: 5%;
     position: relative;
   }
@@ -293,30 +293,60 @@ img[alt = "stay"]{
 }
 
 img[alt ="profile-1"]{
-  border-radius: 100%;
-  width: 10%;
-  object-fit: contain;
-  align-self: flex-start;
+  border-radius: 50%;
+  height: 30px;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 10px;
+  margin-top: 7px;
 
 }
 
 .card1,.card2,.card3{
-  padding: 35px;
-  background-color: black;
+  padding: 25px;
   width: 90%;
-  height: 90%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.card1:hover,.card2:hover,.card3:hover{
+  transition: all .2s ease-out;
+  top: -4px;
+  background-color: var(--testimonial);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
+}
+    
+  .card1:hover:before,.card2:hover:before,.card3:hover:before {
+    -webkit-transform: scale(2.15);
+            transform: scale(2.15);
+  
 }
 
 .card2-flex{
   display: flex;
-  flex-direction: column;
-  text-align: justify;
-  font-size: 14px;
+  flex-basis: 1;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
 }
 
+.card2-text{
+  font-size: 12px;
+  vertical-align: middle;
+}
 
+.card2-text p{
+  margin-top: -4px;
+}
 
-
+footer{
+  background-color: var(--footer);
+  max-width: 100%;
+  height: 600px;
+}
 
 
 
