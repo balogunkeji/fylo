@@ -83,7 +83,7 @@ nav .ul{
     justify-self: end;
 }
 
-nav a,ul,li{
+nav a,nav ul,nav li{
     text-transform: capitalize;
     text-decoration: none;
     color: var(--white);
@@ -132,7 +132,7 @@ nav ul li a{
   .dropdown-content a:hover {background-color: #ddd;}
 
 
-  ul{
+  nav ul{
     display: grid;
     grid-template-columns: repeat(4,100px);
 
@@ -396,9 +396,55 @@ footer{
   position: relative;
 }
 
+
 .footer{
-  padding: 5%;
+  padding: 13% 10%;
 }
 
+.footer-div{
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
+  padding-top: 30px;
+}
 
+.flex1{
+  display: flex;
+}
 
+.flex1 p{
+  padding: 0 30px;
+}
+
+.flex1 img{
+  height: 20px;
+}
+
+.flex2{
+  padding: 0 45px;
+}
+
+.flex2 img{
+  padding-right: 25px;
+}
+
+.flex2 img[alt="email"]{
+  padding-top: 15px;
+}
+
+.foot1 ul, .foot1 li{
+  list-style: none;
+  padding: 0 40px;
+  line-height: 40px;
+}
+
+.foot2 ul, .foot2 li{
+  list-style: none;
+  line-height: 40px;
+}
+
+.face{
+  border-radius: 50px;
+  border: 1px solid white;
+  padding: 5px;
+  margin-left: 6px;
+}
