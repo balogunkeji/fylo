@@ -1,4 +1,4 @@
-const toggleSwitch = document.querySelector('.switch');
+const toggleSwitch = document.querySelector('.dropdown-content');
 
 
 toggleSwitch.addEventListener('click', switchButton, false);
