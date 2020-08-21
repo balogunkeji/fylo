@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+/>
+
   <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -38,7 +41,7 @@
   </header>
 
   <main>
-    <div class="intro">
+    <div class="intro" data-aos="fade-left">
       <img src="images/illustration-intro.png" alt="intro">
       <div class="intro-text">
         <h2>  All your files in one secure location,<br> accessible anywhere.
@@ -51,7 +54,7 @@
     </div>
     
     <div class="grid">
-      <div class="up">
+      <div class="up"data-aos="fade-up-right">
         <img src="images/icon-access-anywhere.svg" alt="access">
         <h3>  Access your files, anywhere
         </h3>
@@ -59,21 +62,21 @@
           files follow you everywhere.
         </p>
       </div>
-      <div class="up">
+      <div class="up" data-aos="fade-up-left">
         <img src="images/icon-security.svg" alt="security">
         <h3>  Security you can trust</h3>
         <p>2-factor authentication and user-controlled encryption are just a couple of the security 
           features we allow to help secure your files.
         </p>
       </div>
-      <div class="down">
+      <div class="down" data-aos="fade-down-right">
         <img src="images/icon-collaboration.svg" alt="collaboration">
         <h3>  Real-time collaboration
         </h3>
         <p>  Securely share files and folders with friends, family and colleagues for live collaboration. 
           No email attachments required.</p>
       </div>
-      <div class="down">
+      <div class="down" data-aos="fade-down-left">
         <img src="images/icon-any-file.svg" alt="any">
         <h3>  Store any type of file</h3>
         <p>  Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all   file types to be securely stored and shared. 
@@ -81,7 +84,9 @@
       </div>
     </div>
 
-    <div class="stay">
+    <div class="stay" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div>
         <img src="images/illustration-stay-productive.png" alt="stay">
       </div>
@@ -94,7 +99,9 @@
     </div>
     </div>
 
-    <div class="card">
+    <div class="card" data-aos="fade-left"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="card1">
         <p> Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has   become a well-oiled collaboration machine.</p>
         <div class="card2-flex">
@@ -126,7 +133,9 @@
         </div>
       </div>
 
-    <div class="form">
+    <div class="form" data-aos="fade-up-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <h2>  Get early access today </h2>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
         questions, our support team would be happy to help you. </p>
@@ -176,6 +185,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/style.js"></script>
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>

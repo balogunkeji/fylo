@@ -1,3 +1,6 @@
+AOS.init();
+
+
 const toggleSwitch = document.querySelector('.dropdown-content');
 
 
