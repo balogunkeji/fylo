@@ -75,7 +75,9 @@ nav{
 
 nav .ul{
     display: flex;
-    
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 nav a,nav ul,nav li{
@@ -95,6 +97,7 @@ nav ul li a{
 }
 
 .hamburger{
+  display: none;
   background-color: transparent;
   font-size: 2rem;
   color: white;
