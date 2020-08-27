@@ -6,7 +6,10 @@ toggleSwitch.addEventListener('click', switchButton, false);
 function switchButton(e){
     if(e.target.checked){
         document.documentElement.setAttribute('data-theme', 'dark');
-    } else{
+    }else if(e.target.checked){
+        document.documentElement.setAttribute('data-theme', 'gradient');
+
+    }else{
         document.documentElement.setAttribute('data-theme', 'light');
     }
 }
