@@ -65,22 +65,17 @@ body{
     
 }
 
-/* header{
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-} */
-
 nav{
     font-family: var(--headnavcall);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     margin: 5%;
     
 }
 
 nav .ul{
-    justify-self: end;
+    display: flex;
+    
 }
 
 nav a,nav ul,nav li{
@@ -97,6 +92,17 @@ nav ul li a{
     position: relative;
     color: white;
     transition: color 2s;
+}
+
+.hamburger{
+  background-color: transparent;
+  font-size: 2rem;
+  color: white;
+  border: 0;
+}
+
+.hamburger:focus{
+  outline: none;
 }
 
 .dropdn{
