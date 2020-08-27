@@ -34,9 +34,9 @@
 
 [data-theme="gradient"] {
     /* Light theme color variables */
-    --emailback: hsl(0, 4%, 5%);
-    --mainback: linear-gradient(to right top, #070a80, #00389e, #0059b3, #0079c0, #0098ca, #00a2ce, #00abd1, #00b5d3, #00aed5, #00a7d6, #00a0d7, #0098d6);
-    --testimonial: #3C3C3C;    ;
+    --emailback: linear-gradient(to right bottom, #19cde2, #00bbff, #00a1ff, #4678ff, #c112eb);
+    --mainback: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    --testimonial: background-image: linear-gradient(to right bottom, #19cde2, #00bbff, #00a1ff, #4678ff, #c112eb);   ;
     --footer: radial-gradient(circle, #072e80, #002d90, #002a9f, #0026ae, #001fbc, #002dc8, #003ad3, #0047df, #0061e5, #0076e5, #0088df, #0098d6);
     --white: white;
     --dropdown: radial-gradient( circle farthest-corner at 0.8% 3.1%,  rgba(255,188,224,1) 0%, rgba(170,165,255,1) 46%, rgba(165,255,205,1) 100.2% );
@@ -65,22 +65,19 @@ body{
     
 }
 
-/* header{
-  width: 100%;
-  position: fixed;
-  z-index: 3;
-} */
-
 nav{
     font-family: var(--headnavcall);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     margin: 5%;
     
 }
 
 nav .ul{
-    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
 nav a,nav ul,nav li{
@@ -97,6 +94,18 @@ nav ul li a{
     position: relative;
     color: white;
     transition: color 2s;
+}
+
+.hamburger{
+  display: none;
+  background-color: transparent;
+  font-size: 2rem;
+  color: white;
+  border: 0;
+}
+
+.hamburger:focus{
+  outline: none;
 }
 
 .dropdn{
@@ -317,7 +326,7 @@ img[alt ="profile-1"]{
   background-color: var(--testimonial);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(209, 207, 207, 0.75);
   
 }
     
@@ -352,9 +361,8 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   margin: 30% 20% 30% 15%;
   overflow: hidden;
   background-color: var(--testimonial);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(209, 207, 207, 0.75);
+
 }
 
 .form h2{
