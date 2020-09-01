@@ -23,26 +23,6 @@
     --white: black;
 }
 
-[data-theme="dark"] {
-    /* Light theme color variables */
-    --emailback: hsl(0, 4%, 5%);
-    --mainback:  hsl(180, 3%, 6%);
-    --testimonial: #3C3C3C;
-    --footer: hsl(180, 1%, 21%);
-    --white: white;
-}
-
-[data-theme="gradient"] {
-    /* Light theme color variables */
-    --emailback: linear-gradient(to right bottom, #19cde2, #00bbff, #00a1ff, #4678ff, #c112eb);
-    --mainback: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-    --testimonial: background-image: linear-gradient(to right bottom, #19cde2, #00bbff, #00a1ff, #4678ff, #c112eb);   ;
-    --footer: radial-gradient(circle, #072e80, #002d90, #002a9f, #0026ae, #001fbc, #002dc8, #003ad3, #0047df, #0061e5, #0076e5, #0088df, #0098d6);
-    --white: white;
-    --dropdown: radial-gradient( circle farthest-corner at 0.8% 3.1%,  rgba(255,188,224,1) 0%, rgba(170,165,255,1) 46%, rgba(165,255,205,1) 100.2% );
-}
-
-
 *,
 *::before,
 *::after{
@@ -93,11 +73,16 @@ nav a,nav ul,nav li{
 nav ul li a{
     position: relative;
     color: white;
-    transition: color 2s;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+  color: rgb(179, 169, 169);
 }
 
 .hamburger{
   display: none;
+  cursor: pointer;
   background-color: transparent;
   font-size: 2rem;
   color: white;
@@ -180,7 +165,7 @@ nav ul li a{
   }
 
   main{
-    margin: 5%;
+    margin: 6%;
     position: relative;
   }
 
